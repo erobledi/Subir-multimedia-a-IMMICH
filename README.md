@@ -1,4 +1,5 @@
 # Subir multimedia a Immich
+🟡 En desarrollo
 
 Script en Python para subir archivos multimedia (imágenes y vídeos) a un servidor **Immich** desde un entorno local (Windows).
 
@@ -18,8 +19,8 @@ El objetivo del proyecto es facilitar la carga masiva de archivos ubicados en un
 
 ## Requisitos
 
-- Python 3.10 o superior
-- Acceso a un servidor Immich operativo
+- Python 3.13.7 o superior
+- Acceso a un servidor Immich operativo (probado en v2.3.1)
 - Clave API válida de Immich
 - Conexión de red al servidor Immich
 
