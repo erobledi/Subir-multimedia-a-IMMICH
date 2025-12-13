@@ -82,3 +82,4 @@ if __name__ == "__main__":
     mostrar_config(config)
 
 
+    print("Programa finalizado.")
