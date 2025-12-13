@@ -5,7 +5,16 @@ import json
 import os
 import uuid
 from datetime import datetime, timezone
-#import requests
+import requests
+
+
+
+def fun_validarInput(mensaje: str) -> str:
+    while True:
+        valor = input(mensaje).strip()
+        if valor:
+            return valor
+        print("❌ Este campo no puede estar vacío. Inténtalo de nuevo.")
 
 
 def fun_leerArchivo(archivoDatos) -> bool:
@@ -16,10 +25,12 @@ def fun_leerArchivo(archivoDatos) -> bool:
             print("El archivo no existe.")
             
             #// Se pide por pantalla los siguientes datos.
-            url = input("Introduce la URL del servidor Immich: ").strip()
-            apiKey = input("Introduce la API key: ").strip()
-            directorio = input("Introduce el directorio donde están los archivos multimedia: ").strip()
+            url = fun_validarInput("Introduce la URL del servidor Immich: ")
+            apiKey = fun_validarInput("Introduce la API key: ")
+            directorio = fun_validarInput("Introduce el directorio donde están los archivos multimedia: ")
+            
             deviceID = input("Introduce el Device ID (dejar vacío para generar uno nuevo): ").strip()
+            
             if not deviceID:
                 deviceID = "windows-script-001"
 
