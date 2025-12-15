@@ -1,25 +1,17 @@
-from pathlib import Path
-import json
-
-#// Librerías para usar en immich
 import os
 import uuid
 from datetime import datetime, timezone
 import requests
 
-
-
-
-
 # ==========================
 # CONFIGURACIÓN
 # ==========================
-IMMICH_URL = "http://192.168.10.207:2283"
-API_KEY = "LNRYw9PAuIdKNhfYERRuWNvy7kPSnyD7o2xQGcLhI"
-LOCAL_FOLDER = r"Y:\MIS DOCUMENTOS\Mis imagenes"
+IMMICH_URL = "https://tu-servidor-immich.com"        # URL del servidor Immich
+API_KEY = "Clave_API_Aquí"                           # Clave API generada en Immich
+LOCAL_FOLDER = r"C:\ruta\a\tus\archivos\multimedia"  # Carpeta local con fotos/videos a subir
 
 # ID fijo del "dispositivo" (se mantiene estable para este PC/script)
-DEVICE_ID = "windows-script-001"
+DEVICE_ID = "windows-script-001"    # Sirve para identificar el origen de los archivos
 
 HEADERS = {
     "x-api-key": API_KEY
