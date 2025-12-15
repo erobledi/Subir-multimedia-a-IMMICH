@@ -1,2 +1,5 @@
 # Archivos de configuración sensibles
 datos.json
+
+__pycache__/
+*.pyc
